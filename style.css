@@ -100,6 +100,41 @@ body {
     height: 2px;
 }
 
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* centers inside page */
+  margin: auto;
+  padding: 20px 0;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: calc(200px * 10);
+  animation: scroll 25s linear infinite; /* 40s = slower delay */
+}
+
+.logo-track img {
+  height: 50px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
 /* ✅ Responsive */
 @media (max-width: 991px) {
     .nav-links {
