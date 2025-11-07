@@ -128,6 +128,126 @@ body {
   transform: scale(1.1);
 }
 
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 80px 10%;
+      background: linear-gradient(90deg, #fff 60%, #f7fff7);
+      position: relative;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/dotnoise-light-grey.png');
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .product-image {
+      width: 50%;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.4s ease;
+    }
+
+    .product-image:hover {
+      transform: scale(1.05);
+    }
+
+    .text-content {
+      max-width: 500px;
+      z-index: 1;
+    }
+
+    .text-content h1 {
+      font-size: 40px;
+      color: #222;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .text-content h4 {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .text-content p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .shop-btn {
+      display: inline-block;
+      background: #1b8c4d;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .shop-btn:hover {
+      background: #16763e;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .price .current {
+      color: #000;
+    }
+
+    .price .old {
+      color: #f58634;
+      text-decoration: line-through;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      .product-image {
+        width: 250px;
+      }
+    }
+
+    .img3{
+        height: 100%;
+        width: 50%;
+        z-index: 1;
+        margin: 100px 0px 0px 0px;
+    }
+
+    .bgimg3{
+        background-image: url('/image/dotted_circle.avif');
+        height: 100%;
+        width: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 
 @keyframes scroll {
   0% { transform: translateX(0); }
