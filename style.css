@@ -286,34 +286,108 @@ body {
   transition: 1s;
 }
 
-.btn4:hover{
-      border: none;
-      background-color: #1b8c4d;
-      color: #fff;
-      border-radius: 100px;
-      transition: 0.5s;
-    }
+.btn5 {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 50px;
+  background-color: #f58634;
+}
+
+.btn5:hover {
+  color: #f58634;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 50px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.btn4:hover {
+  border: none;
+  background-color: #1b8c4d;
+  color: #fff;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
 /* icon-color */
 .clr1 {
   color: #f58634;
 }
 
 /* card */
-.card1:hover{
-      display: block;
-      box-shadow: 0px 0px 10px #00000036;
-      transition: 0.5s;
-      border: none;
-    }
+.card1:hover {
+  display: block;
+  box-shadow: 0px 0px 10px #00000036;
+  transition: 0.5s;
+  border: none;
+}
+
 .card1 {
   border: none;
   transition: 0.5s;
 }
+
 .card1:hover .btn4 {
   display: flex;
   transition: 0.5s;
   border: none;
 }
+
+.card3 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid white;
+}
+
+.card3:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-top: 5px solid #6c757d;
+  color: #f58634;
+  transition: 0.5s;
+  border: 1px solid #f7a600;
+}
+
+/* testnomal-slidebar */
+    /* html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    } */
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-image: url('/image/testimonial_bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 
 @keyframes scroll {
